@@ -1,3 +1,0 @@
-ola mundo
-autualiuzação
-git staging
