@@ -30,7 +30,7 @@ public class jogo3finais {
                 vida2 = leitor.nextInt();
 
                 if (vida2== 2) {
-                    System.out.println("Você escolheu o projeto corrento e hoje faz parceria com jeff boss. TERMINOU FELIZ. FIM DE JOGO");
+                    System.out.println("Você escolheu o projeto correto e hoje faz parceria com jeff boss. TERMINOU FELIZ. FIM DE JOGO");
                 
                 } else {
                     System.out.println("você errou no projeto e perdeu grana. vive como  estabilizado pela fama e conquistou.FIM DO JOGO");
