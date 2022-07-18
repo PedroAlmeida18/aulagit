@@ -1,0 +1,79 @@
+import java.util.Scanner;
+
+public class jogo3finais {
+    public static void main(String[] args) {
+        System.out.println("Bem vindo ao jogo de texto e escolhas : VIDA DE BRASA");
+        int alternativa;
+        
+        Scanner leitor;
+        leitor = new Scanner(System.in);
+        System.out.println("O objetivo desse jogo é você tornar seu personagem feliz ao final do jogo.");
+        System.out.println("VAMOS A PRIMEIRA ESCOLHA DO JOGO,VOCÊ É ESTUDANTE DO ENSINO MÉDIO(15 anos)  NESSA ETAPA:");
+        System.out.println("1) ESTUDAR MUITO");
+        System.out.println("2)FOCAR NO FUTEBOL"); 
+        System.out.println("3) VIVER EM FESTAS E TER HISTÓRIAS PARA CONTAR");
+        alternativa = leitor.nextInt();
+        if (alternativa == 1) {
+            System.out.println("Você estudou, muito e passou na federal, mas agora tem que escolher. BUSCAR UM SERVIÇO PÚBLICO, OU EMPREENDER. idade :24 ANOS");
+            System.out.println("1) SERVIÇO PÚBLICO");
+            System.out.println("2)EMPREENDER");
+            int vida1;
+            vida1 = leitor.nextInt();
+            if (vida1==1) {
+                System.out.println("você passou em um concurso federal e vive bem, com estabilidade ");
+                System.out.println("Parabéns você segue um caminho bem tranquilo, porém você se perdeu no caminho e estar triste. Fim do jogo.");
+            } else {
+                System.out.println("VOCÊ CRIOU UMA EMPRESA E ESTÁ SUPER FELIZ E HUMORADO, têm dois projetos de tecnologia inovador ");
+                int vida2;
+                System.out.println("você tem duas opções : lançar o projeto 1 : o novo relógio que ajuda na vida de pessoas com obesidade ");
+                System.out.println("2) Lançar o novo carro elétrico, mas tem muitos concorrentes ");
+                vida2 = leitor.nextInt();
+
+                if (vida2== 2) {
+                    System.out.println("Você escolheu o projeto correto e hoje faz parceria com jeff boss. TERMINOU FELIZ. FIM DE JOGO");
+                
+                } else {
+                    System.out.println("você errou no projeto e perdeu grana. vive como  estabilizado pela fama e conquistou.FIM DO JOGO");
+                }
+            }
+        }
+        if (alternativa == 2) {
+            System.out.println("Você jogou a copa São paulo e têm algumas propostas. VOCÊ TÊM 17 ANOS ");
+            System.out.println("1)Ser estrela e futuro promissor da camisa do Naútico, GANHARÁ 30 MIL REAIS POR MÊS ");
+            System.out.println("2) SE AVENTURA NO TIME DO JAPÃO E SER ESQUECIDO PELA MIDIA. PORÉM MUITO RICO  $100 MIL POR SEMANA  ");
+            int fut;
+            fut = leitor.nextInt();
+            if (fut ==1) {
+                System.out.println("Você ficou 3 anos no nautico e conquistou 1 copa do brasil e duas copas do nordeste e tem 20 anos agora  ");
+                System.out.println("AGORA COM 20 ANOS VOCÊ TÊM DUAS PROPOSTAS 1) Milan ou 2)BARCELONA ");
+                int euro ;
+                euro = leitor.nextInt();
+               if (euro ==1 ) {
+                System.out.println("VOCÊ ESCOLEHU O MILAN E RECONSTRUIU O TIME AGORA É IDOLO NA ITALIA CONQUISTOU 3 CHAMPIONS. Fim do jogo");
+               } else {
+                System.out.println("VOCE NÃO DEU CERTO NA EUROPA, MAS VOCÊ TORNOU O NAÚTICO UMA POTÊNCIA NO BRASIL COM 2 LIBER, 2 BRASILEIROS. FIM DO JOGO");
+               }
+            } else {
+                System.out.println("você ganhou muito dinheiro, mas nunca foi uma verdadeira estrela mundial. Fim do jogo");
+                
+            }
+        }
+        if (alternativa == 3) {
+            System.out.println(" VOCÊ CURTIU A ADOLESCÊNCIA, MAS HOJE TEM QUE CONVIVER COM AS INCERTEZAS DA VIDA. você têm 23 anos ");
+            System.out.println("VOCÊ  TÊM DUAS OPÇÕES : 1) Estudar muito e não ter certeza, se irá passar no concurso ou faculdade ");
+            System.out.println("ou 2) se contentar com vida que escolheu");
+            int farra ;
+            farra = leitor.nextInt();
+            if (farra == 1) {
+                System.out.println("você apesar de demorar a conquistar as coisas. Hoje você é feliz e têm um salário alto na petrobras. FIM DO JOGO");
+            } else {
+                System.out.println("INFELIZMENTE VOCÊ TINHA MUITO POTÊNCIAL, MAS NÃO ACORDOU PARA VIDA FICOU NAS INCERTERZAS DA VIDA. FIM DO JOGO ");
+            }
+        } 
+        
+        leitor.close();    
+        
+    }
+}
+
+
