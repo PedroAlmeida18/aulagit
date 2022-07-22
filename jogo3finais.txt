@@ -1,28 +1,64 @@
 import java.util.Scanner;
 
+
+
 public class jogo3finais {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println("Bem vindo ao jogo de texto e escolhas : VIDA DE BRASA");
         int alternativa;
-        
+        String n;
+        String n2;
         Scanner leitor;
+        int i ;
+        int i2 ;
+        i2 = 100;
+        i = 100;
         leitor = new Scanner(System.in);
-        System.out.println("O objetivo desse jogo é você tornar seu personagem feliz ao final do jogo.");
-        System.out.println("VAMOS A PRIMEIRA ESCOLHA DO JOGO,VOCÊ É ESTUDANTE DO ENSINO MÉDIO(15 anos)  NESSA ETAPA:");
+        
+        
+        System.out.println("O objetivo desse jogo é você tornar seu personagem feliz com 100 de felcidade ao final do jogo.");
+        System.out.println("digite o nome do seu personagem :");
+        n = leitor.next();
+        personagens filho  = new personagens(i, n);
+        filho.n = n;
+        filho.i= i;
+        System.out.println("Dgite o nome do seu pai ");
+        n2=leitor.next();
+        personagens pai  = new personagens(i, n);
+        pai.n = n2;
+        filho.i= i2;
+        System.out.println("Personagem Pai :" +  n2  +  "nivel de felcidade de :" + i2);
+        System.out.println("Personagem filho :"+  n  + "nivel de felcidade de :" + i);
+       
+        
+        
+
+        System.out.print("VAMOS A PRIMEIRA ESCOLHA DO JOGO, " + n  +  ". É ESTUDANTE DO ENSINO MÉDIO(15 anos e tem felicidade de 100):");
+        
+        System.out.println("o seu pai,"+ n2 +" têm, essas expectativas para o seu futuro felicdade dele : 100 %");
         System.out.println("1) ESTUDAR MUITO");
         System.out.println("2)FOCAR NO FUTEBOL"); 
         System.out.println("3) VIVER EM FESTAS E TER HISTÓRIAS PARA CONTAR");
         alternativa = leitor.nextInt();
         if (alternativa == 1) {
-            System.out.println("Você estudou, muito e passou na federal, mas agora tem que escolher. BUSCAR UM SERVIÇO PÚBLICO, OU EMPREENDER. idade :24 ANOS");
+            System.out.println("O seu pai está feliz(100%) da sua escolha o senhor, " + n2);
+            System.out.println("VocÊ estudou, muito e passou na federal, mas agora tem que escolher. BUSCAR UM SERVIÇO PÚBLICO, OU EMPREENDER. idade :24 ANOS");
             System.out.println("1) SERVIÇO PÚBLICO");
             System.out.println("2)EMPREENDER");
             int vida1;
             vida1 = leitor.nextInt();
             if (vida1==1) {
                 System.out.println("você passou em um concurso federal e vive bem, com estabilidade ");
-                System.out.println("Parabéns você segue um caminho bem tranquilo, porém você se perdeu no caminho e estar triste. Fim do jogo.");
+                i = i - 50;
+                System.out.println("Prabéns a felicidade do seu pai , "+ n2 + "se mantém me :" + i2);
+                System.out.println("Parabéns você segue um caminho bem tranquilo, porém você se perdeu no caminho e estar triste. Fim do jogo." +
+                 "Status de felicidade : " + i );
             } else {
+                i2 = i2 - 80;
+                System.out.println("");
                 System.out.println("VOCÊ CRIOU UMA EMPRESA E ESTÁ SUPER FELIZ E HUMORADO, têm dois projetos de tecnologia inovador ");
                 int vida2;
                 System.out.println("você tem duas opções : lançar o projeto 1 : o novo relógio que ajuda na vida de pessoas com obesidade ");
@@ -74,6 +110,11 @@ public class jogo3finais {
         leitor.close();    
         
     }
-}
+
+
+    
+    }
+
+
 
 

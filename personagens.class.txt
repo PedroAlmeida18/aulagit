@@ -1,0 +1,13 @@
+public class personagens {
+    int i ;
+    String n;
+
+  personagens(int i, String n){
+    this.i = i;
+    this.n = n;
+    
+  }
+    void mostrarnivel(){
+        System.out.println("Personagem : " +  n  +   "nivel de felcidade de :" + i);
+    }
+}
