@@ -1,0 +1,21 @@
+import java.util.Random;
+
+public class personagens {
+    int i ;
+    String n;
+
+  personagens(int i, String n){
+    this.i = i;
+    this.n = n;
+    
+  }
+   int grauf(){
+    Random gerador = new Random();
+        int  perdaf = 1+ gerador.nextInt(80);
+        int f = i - perdaf;
+        return f ;
+
+   }
+    
+      }
+     
