@@ -11,8 +11,9 @@ public class personagens {
   }
    int grauf(){
     Random gerador = new Random();
-        int  perdaf = 1+ gerador.nextInt(80);
-        int f = i - perdaf;
+        int  perdaf = 1 + gerador.nextInt(100);
+
+        int f = i - perdaf; 
         return f ;
 
    }
